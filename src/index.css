@@ -2,11 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Gilroy";
+  src: url("/src/fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/src/fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Gilroy", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -16,22 +28,8 @@ code {
     monospace;
 }
 
-.custom-box-shw {
-  border-radius: 12px;
-  width: 100%;
-  border: 1px solid #e9e9e9;
-  background: #ffffff;
-  box-shadow: 0px 5px 20px 0px #00000014;
-}
-
-.navbar {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: white;
-  box-shadow: 0px -2px 12px 0px #ebebeb;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px 0;
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
