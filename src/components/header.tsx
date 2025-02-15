@@ -4,7 +4,7 @@ import LanguageSelector from "./language.selector";
 const Header = () => {
   return (
     <div className="border-b-[1px] border-gray py-5">
-      <div className="container">
+      <div className="c_container">
         <div className="flex justify-between">
           <ul className="flex gap-5 items-center">
             <li className="text-dark font-gilroy font-semibold text-[18px] leading-[18px]">
