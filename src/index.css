@@ -31,4 +31,26 @@ code {
 .c_container {
   max-width: 1120px;
   margin: 0 auto;
+  @media (max-width: 1120px) {
+    padding: 0 20px;
+  }
+}
+
+.scroll__bar {
+  &::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+    @media (max-width: 768px) {
+      width: 4px;
+      height: 4px;
+    }
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #9f9f9f;
+    border-radius: 10px;
+  }
 }

@@ -16,7 +16,7 @@ export default function LanguageSelector() {
     <div className="relative inline-block text-left">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center space-x-2 px-3 py-2.5 rounded-md hover:bg-gray-100 transition"
+        className="flex items-center space-x-2 px-3 md:py-2.5 rounded-md hover:bg-gray-100 transition"
       >
         <img src={Flag} alt="flag" className="w-5 h-5" />
         <span className="font-semibold text-dark">{selectedLang.name}</span>

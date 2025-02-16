@@ -4,9 +4,13 @@ import Info from "./components/info";
 import ApplicationForm from "./components/application.form";
 import ParticipantsTable from "./components/participants.table";
 import Footer from "./components/footer";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const App = () => {
+  const [users, setUsers] = useState<UserProps[]>([]);
+  const [categories, setCategories] = useState<CategoryProps[]>([]);
+  const [counts, setCounts] = useState<CountProps[]>([]);
+
   useEffect(() => {
     const fetchingData = async () => {
       try {
@@ -27,11 +31,9 @@ const App = () => {
           response2.json(),
           response3.json(),
         ]);
-
-        // Use the data
-        console.log("Data from endpoint1:", data1);
-        console.log("Data from endpoint2:", data2);
-        console.log("Data from endpoint3:", data3);
+        setCategories(data1);
+        setUsers(data2);
+        setCounts(data3);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -42,14 +44,23 @@ const App = () => {
     <>
       <Header />
       <Hero />
-      <div className="mt-20 mb-20">
+      <div className="mt-10 md:mt-20 mb-10 md:mb-20">
         <Info />
       </div>
       <div className="mb-10">
-        <ApplicationForm />
+        <ApplicationForm
+          categories={categories}
+          counts={counts}
+          users={users}
+          setCounts={setCounts}
+        />
       </div>
-      <div className="mt-10">
-        <ParticipantsTable />
+      <div className="pb-16">
+        <ParticipantsTable
+          categories={categories}
+          counts={counts}
+          users={users}
+        />
       </div>
       <Footer />
     </>
