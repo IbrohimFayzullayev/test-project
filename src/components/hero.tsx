@@ -27,8 +27,6 @@ const Hero = () => {
             Оставить заявку
           </button>
         </div>
-
-        {/* Rasm elementlari: faqat katta ekranlarda ko'rsatiladi */}
         <img
           src={HtmlIcon}
           alt="HTML"

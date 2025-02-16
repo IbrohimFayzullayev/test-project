@@ -73,9 +73,7 @@ const ApplicationForm: FC<Props> = ({
 
   return (
     <div className="bg-white flex flex-col items-center">
-      {/* Yuqori dekorativ qism */}
       <div className="w-full h-24 md:h-32 bg-[#F6F8FB] rounded-t-[50%]" />
-      {/* Forma konteyneri */}
       <div className="bg-[#F6F8FB] pb-10 md:pb-20 w-full flex justify-center">
         <div className="w-[90%] max-w-md bg-[#F6F8FB]">
           <h1 className="text-center text-[28px] md:text-[36px] font-bold leading-[42px] md:leading-[54px] mb-4 md:mb-6">

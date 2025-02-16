@@ -7,7 +7,7 @@ interface UserGroupProps {
 
 const UserGroup: React.FC<UserGroupProps> = ({ count, avatars }) => {
   return (
-    <div className="flex items-center space-x-3 justify-center">
+    <div className="flex items-center space-x-3 flex-col md:flex-row justify-center">
       <div className="flex -space-x-2">
         {avatars.slice(0, 3).map((src, index) => (
           <img
