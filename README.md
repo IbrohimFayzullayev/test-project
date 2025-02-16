@@ -1,50 +1,57 @@
 # Test Project
 
-## Description
+This is a responsive project made using React, TypeScript, and Tailwind CSS.
 
-This project is a test project designed to demonstrate the basic structure and functionality of a typical software project. It includes sample code, configuration files, and instructions for setting up and running the project.
+## Technologies Used
 
-## Features
+- React
+- TypeScript
+- Tailwind CSS
 
-- Sample code demonstrating key concepts
-- Configuration files for easy setup
-- Step-by-step instructions for running the project
+## Getting Started
 
-## Requirements
+To get a local copy up and running, follow these steps.
 
-- [List any software or tools required to run the project, e.g., Node.js, Python, etc.]
+### Prerequisites
 
-## Installation
+Make sure you have the following installed:
+
+- Node.js
+- npm (Node Package Manager)
+
+### Installation
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/test-project.git
+   git clone https://github.com/your-username/test-project.git
    ```
 2. Navigate to the project directory:
    ```sh
    cd test-project
    ```
-3. Install dependencies:
+3. Install the dependencies:
    ```sh
-   [Insert command to install dependencies, e.g., npm install, pip install -r requirements.txt, etc.]
+   npm install
    ```
 
-## Usage
+### Running the Project
 
-1. Run the project:
-   ```sh
-   [Insert command to run the project, e.g., npm start, python main.py, etc.]
-   ```
-2. Open your browser and navigate to `http://localhost:[port]` to view the project.
+To start the development server, run:
 
-## Contributing
+```sh
+npm start
+```
 
-Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to this project.
+The project will be available at `http://localhost:3000`.
 
-## License
+### Building the Project
 
-This project is licensed under the [MIT License](LICENSE).
+To create a production build, run:
 
-## Contact
+```sh
+npm run build
+```
 
-For any questions or feedback, please contact [your email or contact information].
+### License
+
+Distributed under the MIT License. See `LICENSE` for more information.
